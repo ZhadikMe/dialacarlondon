@@ -59,7 +59,7 @@
 		
 <!-- This site is optimized with the Yoast WordPress SEO plugin v1.4.15 - http://yoast.com/wordpress/seo/ -->
 <title>- dialacar</title>
-<link rel="canonical" href="/cab/"/>
+<link rel="canonical" href="https://dialacarlondon.com/cab/"/>
 <link rel="publisher" href="https://plus.google.com/u/0/11126830685515725389"/>
 <meta property="og:locale" content="en_US"/>
 <meta property="og:type" content="article"/>
@@ -117,15 +117,30 @@
 	
 	
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://example.com/"},{"@type":"ListItem","position":2,"name":"dialacar"}]}
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://dialacarlondon.com/"},{"@type":"ListItem","position":2,"name":"dialacar"}]}
 </script>
-<meta property="og:image" content="https://example.com/wp-content/themes/wordpress-bootstrap/images/logo.png">
+<meta property="og:image" content="https://dialacarlondon.com/wp-content/themes/wordpress-bootstrap/images/logo.png">
 
-  <link rel="alternate" hreflang="en" href="https://lifeandmusic.loricarson.com/cab/">
-  <link rel="alternate" hreflang="de" href="https://lifeandmusic.loricarson.com/de/cab/">
-  <link rel="alternate" hreflang="es" href="https://lifeandmusic.loricarson.com/es/cab/">
-  <link rel="alternate" hreflang="ru" href="https://lifeandmusic.loricarson.com/ru/cab/">
-  <link rel="alternate" hreflang="x-default" href="https://lifeandmusic.loricarson.com/cab/">
+  <link rel="alternate" hreflang="en" href="https://dialacarlondon.com/cab/">
+  <link rel="alternate" hreflang="pt" href="https://dialacarlondon.com/pt/cab/">
+  <link rel="alternate" hreflang="ru" href="https://dialacarlondon.com/ru/cab/">
+  <link rel="alternate" hreflang="x-default" href="https://dialacarlondon.com/cab/">
+
+<style id="lang-switcher-style">
+#lang-switcher{position:fixed;bottom:20px;right:20px;z-index:9999;font-family:sans-serif}
+#lang-btn{background:#222;color:#fff;border:none;border-radius:24px;padding:8px 16px;
+  font-size:14px;cursor:pointer;display:flex;align-items:center;gap:6px;
+  box-shadow:0 2px 8px rgba(0,0,0,.35);transition:background .2s}
+#lang-btn:hover{background:#444}
+#lang-panel{display:none;position:absolute;bottom:44px;right:0;background:#fff;
+  border-radius:12px;box-shadow:0 4px 20px rgba(0,0,0,.18);overflow:hidden;
+  min-width:160px;max-height:320px;overflow-y:auto}
+#lang-panel.open{display:block}
+.lang-item{display:flex;align-items:center;gap:8px;padding:10px 16px;
+  text-decoration:none;color:#222;font-size:14px;transition:background .15s}
+.lang-item:hover{background:#f5f5f5}
+.lang-item.active{background:#f0f7ff;font-weight:600}
+</style>
 </head>
 	
 	<body class="single single-post postid-212 single-format-gallery">
@@ -342,7 +357,24 @@ var _wpcf7 = {"loaderUrl":"https:\/\/web.archive.org\/web\/20131205091846\/http:
 </script>
 
 
-	</body>
+	
+<div id="lang-switcher"><button id="lang-btn"><span>🇬🇧</span> English ▾</button><div id="lang-panel"><a href="../cab/index.html" class="lang-item active">🇬🇧 English</a>
+<a href="../de/cab/index.html" class="lang-item">🇩🇪 Deutsch</a>
+<a href="../es/cab/index.html" class="lang-item">🇪🇸 Español</a>
+<a href="../pt/cab/index.html" class="lang-item">🇵🇹 Português</a>
+<a href="../ru/cab/index.html" class="lang-item">🇷🇺 Русский</a>
+</div></div>
+
+<script id="lang-switcher-script">
+(function(){
+  var btn=document.getElementById('lang-btn');
+  var panel=document.getElementById('lang-panel');
+  if(!btn||!panel)return;
+  btn.addEventListener('click',function(e){e.stopPropagation();panel.classList.toggle('open');});
+  document.addEventListener('click',function(){panel.classList.remove('open');});
+})();
+</script>
+</body>
 
 </html><!--
      FILE ARCHIVED ON 09:18:46 Dec 05, 2013 AND RETRIEVED FROM THE
